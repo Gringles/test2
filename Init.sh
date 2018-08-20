@@ -15,6 +15,8 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 sudo docker-compose --version
 
+read -n1 -r -p "Press anything to continue"
+
 sudo docker ps -a
 sudo docker rm nrac_ingest_zookeeper_1 nrac_ingest_kafka_1 
 
