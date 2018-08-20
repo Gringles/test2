@@ -42,6 +42,7 @@ cd error_log
 sudo mkdir metropolitan_line_v1_0
 
 cd Sprint3
+sudo chmod 777 Sprint3
 sudo git clone https://github.com/Gringles/test3.git
 cd test3
 cd docker-compose-builds
