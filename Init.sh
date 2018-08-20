@@ -42,17 +42,15 @@ cd error_log
 sudo mkdir metropolitan_line_v1_0
 
 cd /Testing
-clear 
-ls
 cd Sprint3
 sudo git clone https://github.com/Gringles/test3.git
 cd test3
 cd docker-compose-builds
 
 sudo docker network create -d bridge nrac_ingest_default --attachable
+cd nrac_ingest
+sudo source DockerBuild.sh
 
-
-cd /test2
-sudo rm -r Testing
+echo MiNiFi installed!
 
 
