@@ -41,7 +41,11 @@ cd ..
 cd error_log
 sudo mkdir metropolitan_line_v1_0
 
-git clone https://github.com/Gringles/test3.git
+cd Sprint3
+sudo git clone https://github.com/Gringles/test3.git
+cd test3
+cd docker-compose-builds
 
 sudo docker network create -d bridge nrac_ingest_default --attachable
+
 
