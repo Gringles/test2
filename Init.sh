@@ -23,15 +23,23 @@ cd /Testing
 sudo mkdir Sprint3
 cd Sprint3
 
-sudo mkdir /Volumes
-sudo mkdir /Volumes/file-ingest/metropolitan_line_v1_0
-sudo mkdir /Volumes/file-ingest/ingested
-sudo mkdir /Volumes/file-ingest/ingested/metropolitan_line_v1_0
-sudo mkdir /Volumes/file-ingest/file_store
-sudo mkdir /Volumes/file-ingest/file_store/metropolitan_line_v1_0
-sudo mkdir /Volumes/file-ingest/cache
-sudo mkdir /Volumes/file-ingest/error_log
-sudo mkdir /Volumes/file-ingest/error_log/metropolitan_line_v1_0
+sudo mkdir Volumes
+cd Volumes
+sudo mkdir file-ingest
+cd file-ingest
+sudo mkdir ingested
+sudo mkdir file_store
+sudo mkdir cache
+sudo mkdir error_log
+sudo mkdir metropolitan_line_v1_0
+cd ingested
+sudo mkdir metropolitan_line_v1_0
+cd ..
+cd file-store
+sudo mkdir metropolitan_line_v1_0
+cd ..
+cd error_log
+sudo mkdir metropolitan_line_v1_0
 
 git clone https://github.com/Gringles/test3.git
 
