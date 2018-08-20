@@ -35,7 +35,7 @@ sudo mkdir metropolitan_line_v1_0
 cd ingested
 sudo mkdir metropolitan_line_v1_0
 cd ..
-cd file-store
+cd file_store
 sudo mkdir metropolitan_line_v1_0
 cd ..
 cd error_log
