@@ -49,7 +49,7 @@ cd docker-compose-builds
 
 sudo docker network create -d bridge nrac_ingest_default --attachable
 cd nrac_ingest
-sudo source DockerBuild.sh
+source DockerBuild.sh
 
 echo MiNiFi installed!
 
