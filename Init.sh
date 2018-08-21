@@ -42,9 +42,12 @@ then
 	cd /Testing
 	sudo mkdir Sprint3
 	cd Sprint3
+else
+	cd /Testing
+	cd Sprint3
 fi
 
-if [! -d Volumes] 
+if [ ! -d "Volumes" ]
 then
 	sudo mkdir Volumes
 	cd Volumes
