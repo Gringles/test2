@@ -36,12 +36,7 @@ else
 	clear
 fi
 
-docker ps -f "name=force nrac_ingest_zookeeper_1" --format "{{.Names}}"
-
-if [ docker ps -f "name=force nrac_ingest_zookeeper_1" --format "{{.Names}}" ] ; 
-then 
-	sudo docker rm --force nrac_ingest_zookeeper_1 
-fi
+sudo docker rm --force nrac_ingest_zookeeper_1 
 sudo docker rm --force nrac_ingest_kafka_1 
 sudo docker rm --force nrac_ingest_minifi_1
 
@@ -81,7 +76,8 @@ cd /Testing
 cd Sprint3
 
 read -n1 -r -p "Download Source?" input
-if ["$input"='y']; then
+if ["$input"='y']; 
+then
 	sudo git clone https://github.com/Gringles/test3.git
 else
 	echo not installing
@@ -94,7 +90,8 @@ sudo docker network create -d bridge nrac_ingest_default --attachable
 cd nrac_ingest
 
 read -n1 -r -p "Install Package?" input
-if ["$input"='y']; then
+if ["$input"='y']; 
+then
 	docker-compose up -d
 else
 	echo ending script
