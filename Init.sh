@@ -75,8 +75,8 @@ fi
 cd /Testing
 cd Sprint3
 
-read -n1 -r -p "Download Source?" input
-if ["$input"='y']; 
+read -n1 -r -p "Install Docker?" input
+if ["$input"='y'];
 then
 	sudo git clone https://github.com/Gringles/test3.git
 else
@@ -89,8 +89,8 @@ cd docker-compose-builds
 sudo docker network create -d bridge nrac_ingest_default --attachable
 cd nrac_ingest
 
-read -n1 -r -p "Install Package?" input
-if ["$input"='y']; 
+read -n1 -r -p "Install Docker?" input
+if ["$input"='y'];
 then
 	docker-compose up -d
 else
