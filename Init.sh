@@ -80,6 +80,7 @@ if ["$input"='y'];
 then
 	sudo git clone https://github.com/Gringles/test3.git
 else
+	clear
 	echo not installing
 fi
 
@@ -94,6 +95,7 @@ if ["$input"='y'];
 then
 	docker-compose up -d
 else
+	clear
 	echo ending script
 fi
 
