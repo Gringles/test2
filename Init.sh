@@ -40,7 +40,7 @@ if [! -d Testing]
 	sudo mkdir /Testing
 	cd /Testing
 	sudo mkdir Sprint3
-	cd Sprint3
+	cd Sprint3;
 fi
 
 if [! -d Volumes]; then
