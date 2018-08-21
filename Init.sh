@@ -37,7 +37,7 @@ else
 fi
 
 sudo docker ps -a
-if [ docker ps -f "name=force nrac_ingest_zookeeper_1" --format "{{.Names}}" = "force nrac_ingest_zookeeper_1"] 
+if [ docker ps -f "name=force nrac_ingest_zookeeper_1" --format "{{.Names}}" = "force nrac_ingest_zookeeper_1" ] ; 
 then 
 	sudo docker rm --force nrac_ingest_zookeeper_1 
 fi
