@@ -40,24 +40,27 @@ cd /Testing
 sudo mkdir Sprint3
 cd Sprint3
 
-sudo mkdir Volumes
-cd Volumes
-sudo mkdir file-ingest
-cd file-ingest
-sudo mkdir ingested
-sudo mkdir file_store
-sudo mkdir cache
-sudo mkdir error_log
-sudo mkdir metropolitan_line_v1_0
-cd ingested
-sudo mkdir metropolitan_line_v1_0
-cd ..
-cd file_store
-sudo mkdir metropolitan_line_v1_0
-cd ..
-cd error_log
-sudo mkdir metropolitan_line_v1_0
 
+if [! -d Volumes ]; then
+	sudo mkdir Volumes
+	cd Volumes
+	sudo mkdir file-ingest
+	cd file-ingest
+	sudo mkdir ingested
+	sudo mkdir file_store
+	sudo mkdir cache
+	sudo mkdir error_log
+	sudo mkdir metropolitan_line_v1_0
+	cd ingested
+	sudo mkdir metropolitan_line_v1_0
+	cd ..
+	cd file_store
+	sudo mkdir metropolitan_line_v1_0
+	cd ..
+	cd error_log
+	sudo mkdir metropolitan_line_v1_0
+else
+fi
 cd /Testing
 cd Sprint3
 
