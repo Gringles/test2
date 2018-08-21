@@ -2,7 +2,7 @@ sudo mkdir /Software
 cd /Software
 echo 
 read -n1 -r -p "Install Docker?" input
-if [["$input"="y"]];
+if ["$input"='y'];
 then
 	sudo yum install wget
 	sudo wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-18.03.1.ce-1.el7.centos.x86_64.rpm
@@ -15,6 +15,8 @@ then
 	sudo systemctl enable docker
 	clear 
 	echo Docker Installed!!
+else
+	clear
 fi
 
 read -n1 -r -p "Install docker-compose?" input
@@ -25,6 +27,8 @@ if ["$input"='y']; then
 	docker-compose --version
 	clear
 	echo docker-compose Installed!!
+else
+	clear
 fi
 
 sudo docker ps -a
@@ -56,10 +60,14 @@ sudo mkdir metropolitan_line_v1_0
 
 cd /Testing
 cd Sprint3
+
 read -n1 -r -p "Download Source?" input
 if ["$input"='y']; then
 	sudo git clone https://github.com/Gringles/test3.git
+else
+	echo not installing
 fi
+
 cd test3
 cd docker-compose-builds
 
@@ -69,6 +77,8 @@ cd nrac_ingest
 read -n1 -r -p "Install Package?" input
 if ["$input"='y']; then
 	docker-compose up -d
+else
+	echo ending script
 fi
 
 
