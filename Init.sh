@@ -37,13 +37,15 @@ sudo docker rm --force nrac_ingest_kafka_1
 sudo docker rm --force nrac_ingest_minifi_1
 
 if [! -d Testing]
+then
 	sudo mkdir /Testing
 	cd /Testing
 	sudo mkdir Sprint3
-	cd Sprint3;
+	cd Sprint3
 fi
 
-if [! -d Volumes]; then
+if [! -d Volumes] 
+then
 	sudo mkdir Volumes
 	cd Volumes
 	sudo mkdir file-ingest
