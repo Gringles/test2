@@ -41,7 +41,6 @@ if [! -d /Testing];
 	cd /Testing
 	sudo mkdir Sprint3
 	cd Sprint3
-else
 fi
 
 if [! -d Volumes]; then
@@ -62,8 +61,8 @@ if [! -d Volumes]; then
 	cd ..
 	cd error_log
 	sudo mkdir metropolitan_line_v1_0
-else
 fi
+
 cd /Testing
 cd Sprint3
 
