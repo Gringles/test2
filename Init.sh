@@ -36,7 +36,7 @@ sudo docker rm --force nrac_ingest_zookeeper_1
 sudo docker rm --force nrac_ingest_kafka_1 
 sudo docker rm --force nrac_ingest_minifi_1
 
-if [! -d Testing]
+if [-d Testing]
 then
 	sudo mkdir /Testing
 	cd /Testing
