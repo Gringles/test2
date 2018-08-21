@@ -19,7 +19,7 @@ docker-compose --version
 read -n1 -r -p "Press anything to continue"
 
 sudo docker ps -a
-sudo docker rm nrac_ingest_zookeeper_1 nrac_ingest_kafka_1 
+sudo docker rm --force nrac_ingest_zookeeper_1 nrac_ingest_kafka_1 nrac_ingest_minifi_1
 
 sudo mkdir /Testing
 cd /Testing
